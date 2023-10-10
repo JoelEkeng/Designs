@@ -67,7 +67,7 @@ span{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url('unnamed_3.png');
+    background-image: url('assets/Smiling.png');
     background-size: cover;
     background-position: center;
     
@@ -143,7 +143,7 @@ span{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url('reating.png');
+    background-image: url('assets/Rating.png');
     background-size: cover;
     background-position: center;
 }
