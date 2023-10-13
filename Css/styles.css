@@ -1,56 +1,76 @@
-:root{
+/* Define custom CSS variables */
+:root {
     --background-color1: #c271ff;
     --background-color2: #FFFFFF;
     --background-color3: #071629;
 }
-*{
+
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-*,*::before,*::after {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-body{
+
+/* Set the base font family */
+body {
     font-family: 'Source Sans Pro';
 }
 
+/* Media query for screens with a max width of 75em (1200px) */
 @media (max-width: 75em) {
-    html{
+    html {
         font-size: 60%;
     }
 }
 
+/* Media query for screens with a max width of 61.25em (980px) */
 @media (max-width: 61.25em) {
-    html{
+    html {
         font-size: 58%;
     }
 }
 
-@media (max-width: 28.75) {
-    html{
+/* Media query for screens with a max width of 28.75em (460px) */
+@media (max-width: 28.75em) {
+    html {
         font-size: 55%;
     }
 }
-p{
+
+/* Basic styles for paragraphs, images, and spans */
+p {
     font-size: 14px;
 }
-img{
+
+img {
     display: block;
     width: 100%;
 }
-span{
-    color: #c271ff;
+
+span {
+    color: var(--background-color1);
 }
-.code{
+
+/* Styles for code elements */
+.code {
     font-size: 10px;
 }
-.quote-image-description .p{
+
+/* Styles for a quote image description */
+.quote-image-description .p {
     font-style: italic;
     font-size: 17px;
 }
-.quote{
-    font-family:'Lato', sans-serif;
+
+.quote {
+    font-family: 'Lato', sans-serif;
     background-color: var(--background-color1);
     display: flex;
     gap: 2rem;
@@ -60,56 +80,75 @@ span{
     padding: 10rem;
     width: 100%;
 }
-.circle{
+
+/* Styles for circular elements */
+.circle {
     border-radius: 50%;
 }
-.quote-image{
+
+/* Styles for a quote image */
+.quote-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background-image: url('assets/Smiling.png');
     background-size: cover;
     background-position: center;
-    
 }
-.quote-image-description{
+
+/* Styles for the quote image description */
+.quote-image-description {
     color: var(--background-color2);
     line-height: 1.5;
     max-width: 680px;
 }
-.quote-image-description h3{
+
+/* Additional styles for the quote image description */
+.quote-image-description h3 {
     padding-top: 1rem;
-    font-weight: bold ;   /*bold*/
+    font-weight: bold;
 }
-.quote-image-description .p{
+
+.quote-image-description .p {
     padding-top: 0.4rem;
 }
-.quote-image-descrip{
+
+.quote-image-descrip {
     font-size: 20px;
 }
-.types-of-smiling{
+
+/* Styles for the 'types-of-smiling' section */
+.types-of-smiling {
     height: 70vh;
 }
-.types-of-smiling h2{
-    font-size: clamp(1rem,6vw ,2rem) ;
+
+/* Styles for the 'h2' elements in the 'types-of-smiling' section */
+.types-of-smiling h2 {
+    font-size: clamp(1rem, 6vw, 2rem);
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-.smiling{
+
+/* Styles for the 'smiling' section */
+.smiling {
     background-color: #FFFFFF;
     height: 40vh;
     max-height: 450px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
+    justify-content: space-between;
     justify-content: center;
 }
-.smiling h2{
+
+/* Styles for the 'h2' elements in the 'smiling' section */
+.smiling h2 {
     text-align: center;
     font-size: 2em;
 }
-.inner-smiling{
+
+/* Styles for the 'inner-smiling' section */
+.inner-smiling {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     justify-content: space-evenly;
@@ -117,16 +156,21 @@ span{
     max-width: 1280px;
 }
 
-.sm1,.sm2,.sm3,.sm4{
+/* Styles for 'sm1', 'sm2', 'sm3', and 'sm4' elements */
+.sm1, .sm2, .sm3, .sm4 {
     max-width: 255px;
     max-height: 335px;
 }
-.smiling-image{
+
+/* Styles for smiling images */
+.smiling-image {
     width: 255px;
     height: 154px;
-    object-fit: cover;  
+    object-fit: cover;
 }
-.quote-smiling{
+
+/* Styles for the 'quote-smiling' section */
+.quote-smiling {
     padding-top: 1rem;
     display: flex;
     gap: 0.7rem;
@@ -134,12 +178,16 @@ span{
     justify-content: left;
     width: 100%;
 }
-.quote-smiling p{
+
+/* Styles for 'p' elements inside the 'quote-smiling' section */
+.quote-smiling p {
     font-size: 15px;
     font-weight: 500;
     color: var(--background-color1);
 }
-.smile-image{
+
+/* Styles for the smile image */
+.smile-image {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -147,36 +195,48 @@ span{
     background-size: cover;
     background-position: center;
 }
-.rating-circle{
+
+/* Styles for the 'rating-circle' section */
+.rating-circle {
     display: flex;
     gap: 80px;
-    padding-top: 1rem;;
+    padding-top: 1rem;
     color: var(--background-color1);
     font-size: 16px;
     font-weight: 400;
 }
-.rating-circle:hover i{
+
+/* Styles for 'i' elements inside the 'rating-circle' section on hover */
+.rating-circle:hover i {
     cursor: pointer;
     transform: translateY(3px);
-    transition: 0.8 ease-in;
+    transition: 0.8s ease-in;
 }
-.rating-circle p{
+
+/* Additional styles for 'p' elements inside the 'rating-circle' section */
+.rating-circle p {
     font-size: 18px;
     font-weight: 500;
 }
-.membership{
+
+/* Styles for the 'membership' section */
+.membership {
     background-color: var(--background-color3);
     color: #FFFFFF;
     width: 100%;
     height: 50vh;
     display: flex;
     flex-direction: column;
-} 
-.types-membership{
+}
+
+/* Styles for the 'types-membership' section */
+.types-membership {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-.inner-membership{
+
+/* Styles for the 'inner-membership' section */
+.inner-membership {
     display: flex;
     margin: auto;
     padding-top: 4rem;
@@ -187,49 +247,59 @@ span{
     max-width: 1000px;
     line-height: 2;
 }
-.membership h2{
-    font-size: clamp(1rem,6vw ,2rem) ;
+
+/* Styles for 'h2' elements inside the 'membership' section */
+.membership h2 {
+    font-size: clamp(1rem, 6vw, 2rem);
     padding-top: 4rem;
     padding-bottom: 0;
 }
-.membership-header{
+
+/* Styles for the 'membership-header' section */
+.membership-header {
     text-align: center;
     padding-bottom: 4rem;
 }
-.mem-desc{
+
+/* Styles for 'mem-desc' elements */
+.mem-desc {
     text-align: center;
 }
-.logo{
+
+/* Styles for the logo image */
+.logo {
     margin: auto;
     display: block;
     justify-content: center;
     align-content: center;
     width: 50px;
 }
-.inner-description{
-    text-align: center;
-}
 
-button{
+/* Button styles */
+button {
     background-color: var(--background-color1);
     color: var(--background-color2);
     position: relative;
     left: 45%;
     top: 10%;
     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
-    border-radius: 22px; 
+    border-radius: 22px;
     height: 44px;
     border: none;
     width: 162px;
-   font-weight: 600;
-   font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
 }
-button:hover{
+
+/* Button hover effect */
+button:hover {
     cursor: pointer;
     transform: translateZ(100px);
 }
-.FAQ{
-    display:flex;
+
+/* Styles for the 'FAQ' section */
+.FAQ {
+    display: flex;
     flex-direction: column;
     max-width: 1350px;
     width: 100%;
@@ -239,14 +309,18 @@ button:hover{
     padding-bottom: 4rem;
     height: 100%;
 }
-.FAQ-description{
+
+/* Styles for the 'FAQ-description' section */
+.FAQ-description {
     font-size: 50px;
     padding-bottom: 4rem;
     margin-left: 10%;
     text-align: center;
     color: #000;
 }
-.outer-class{
+
+/* Styles for the 'outer-class' section */
+.outer-class {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -257,19 +331,26 @@ button:hover{
     max-width: 920px;
     max-height: 707px;
 }
-.inner-class{
-    display:grid;
-    justify-items:center;
+
+/* Styles for the 'inner-class' section */
+.inner-class {
+    display: grid;
+    justify-items: center;
     grid-gap: 5em;
 }
-.left-side{
-    margin-left: 12%;
-}
-.right-side{
+
+/* Styles for the left side */
+.left-side {
     margin-left: 12%;
 }
 
-footer{
+/* Styles for the right side */
+.right-side {
+    margin-left: 12%;
+}
+
+/* Styles for the footer section */
+footer {
     background-color: var(--background-color3);
     display: flex;
     flex-direction: row;
@@ -277,21 +358,26 @@ footer{
     height: 15vh;
     padding-top: 4%;
 }
-footer img{
+
+/* Styles for footer images */
+footer img {
     width: 169px;
     height: 30px;
 }
 
-.contact-links a{
+/* Styles for contact links */
+.contact-links a {
     align-items: center;
     color: var(--background-color2);
 }
 
-.contact-links i{
+/* Styles for contact link icons */
+.contact-links i {
     width: 20px;
 }
 
-.player{
+/* Styles for the player element */
+.player {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -302,7 +388,8 @@ footer img{
     opacity: 80%;
 }
 
-.triangle{
+/* Styles for the triangle element */
+.triangle {
     width: 0;
     height: 0;
     border-left: 8.25px solid transparent;
@@ -314,7 +401,9 @@ footer img{
     top: 23px;
     left: 25px;
 }
-.triangle:hover{
+
+/* Triangle hover effect */
+.triangle:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
