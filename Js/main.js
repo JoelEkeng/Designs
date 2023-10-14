@@ -1,5 +1,5 @@
 // Set the duration in milliseconds (e.g., 5000 ms for 5 seconds)
-const preloaderDuration = 90000;
+const preloaderDuration = 150000;
 const preloader = document.querySelector(".preloader");
 const main = document.querySelector(".main");
 
