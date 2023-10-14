@@ -80,6 +80,9 @@
 /* Hide the preloader when the content is loaded */
 .main {
     display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
     /* Basic styles for paragraphs, images, and spans */
