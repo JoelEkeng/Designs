@@ -112,6 +112,7 @@
     .cover-page{
         background-image: url('assets/Cover-Photo.png');
         background-size: contain;
+        background-position: inherit;
         background-repeat: no-repeat;
         width: auto;
         height: 150vh;
