@@ -1,493 +1,617 @@
-/* Define custom CSS variables */
-:root {
-    --background-color1: #c271ff;
-    --background-color2: #FFFFFF;
-    --background-color3: #071629;
-}
-
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Set the base font family */
-body {
-    font-family: 'Source Sans Pro';
-}
-
-/* Media query for screens with a max width of 75em (1200px) */
-@media (max-width: 75em) {
-    html {
-        font-size: 75%;
+    /* Define custom CSS variables */
+    :root {
+        --background-color1: #c271ff;
+        --background-color2: #FFFFFF;
+        --background-color3: #071629;
     }
-}
 
-/* Media query for screens with a max width of 61.25em (980px) */
-@media (max-width: 61.25em) {
-    html {
-        font-size: 85%;
+    /* Reset default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
     }
-}
 
-/* Media query for screens with a max width of 28.75em (460px) */
-@media (max-width: 28.75em) {
-    html {
-        font-size: 70;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
     }
-}
 
-/* Basic styles for paragraphs, images, and spans */
-p {
-    font-size: 14px;
-}
+    /* Set the base font family */
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 
-img {
-    display: block;
-    width: 100%;
-}
+    /* Media query for screens with a max width of 75em (1200px) */
+    @media (max-width: 75em) {
+        html {
+            font-size: 75%;
+        }
+    }
 
-span {
-    color: var(--background-color1);
-}
+    /* Media query for screens with a max width of 61.25em (980px) */
+    @media (max-width: 61.25em) {
+        html {
+            font-size: 85%;
+        }
+    }
 
-/* Styles for code elements */
-.code {
-    font-size: 10px;
-}
+    /* Media query for screens with a max width of 28.75em (460px) */
+    @media (max-width: 28.75em) {
+        html {
+            font-size: 70;
+        }
+    }
 
-/* Styles for a quote image description */
-.quote-image-description .p {
-    font-style: italic;
-    font-size: 17px;
-}
+    /* Basic styles for paragraphs, images, and spans */
+    p {
+        font-size: 14px;
+    }
 
-.quote {
-    font-family: 'Lato', sans-serif;
-    background-color: var(--background-color1);
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    padding: 10rem;
-    width: 100%;
-}
+    /* img {
+        display: block;
+        width: 100%;
+    } */
 
-/* Styles for circular elements */
-.circle {
-    border-radius: 50%;
-}
+    span {
+        color: var(--background-color1);
+    }
 
-/* Styles for a quote image */
-.quote-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-image: url('assets/Smiling.png');
-    background-size: cover;
-    background-position: center;
-}
+    /* Styles for code elements */
+    .code {
+        font-size: 5px;
+        font-family: 'Source Sans Pro';
+    }
+    /* Styles for the header */
+    .outter-cover-page{
+        background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.00)0%, #071629 100%), #000;
+        background-blend-mode: normal, color;
+    }
+    .cover-page{
+        background-image: url('assets/Cover-Photo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150vh;
+    }
+    .cover-text{
+        text-align: center;
+        color: var(--background-color2);
+        font-size: 120px;
+        font-weight: 700;
+        line-height: normal;
+        font-style: normal;
+        padding-top: 10%;
+    }
+    .cover-page-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        width: 25%;
+        margin: auto;
+    }
+    .Learn-from-pro{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
-/* Styles for the quote image description */
-.quote-image-description {
-    color: var(--background-color2);
-    line-height: 1.5;
-    max-width: 680px;
-}
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2%;
+    }
+    header img{
+        width: 167.016px;
+        height: 29.461px;
+        flex-shrink: 0;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 30%;
+        list-style: none;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .Header{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        text-align: center;
+    }
+    .Header-text{
+        position: relative;
+        top: 35%;
+        color: var(--background-color2);
+        font-style: normal;
+    }
+    .Header-text span{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .Header-text p{
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .Header-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        position: relative;
+        top: 50%;
+    }
+    .Header-info-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+    /* Changing the background image styles */
+    .Hii1{
+        background-image: url('assets/Smiling.png');
+    }
+    .Hii2{
+        background-image: url('assets/Nannie.png');
+    }
+    .Hii3{
+        background-image: url('assets/Bruce.png');
+    }
+    .Hii4{
+        background-image: url('assets/Henry.png');
+    }
+    .Header-info:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+    .Header-info p{
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+    }
 
-/* Additional styles for the quote image description */
-.quote-image-description h3 {
-    padding-top: 1rem;
-    font-weight: bold;
-}
+    .Header-info h3, .Header-info p{
+        color: var(--background-color2);
+    }
 
-.quote-image-description .p {
-    padding-top: 0.4rem;
-}
+    /* Styles for a quote image description */
+    .quote-image-description .p {
+        font-style: italic;
+        font-size: 17px;
+    }
 
-.quote-image-descrip {
-    font-size: 20px;
-}
+    .quote {
+        font-family: 'Lato', sans-serif;
+        background-color: var(--background-color1);
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        padding: 10rem;
+        width: 100%;
+    }
 
-/* Styles for the 'types-of-smiling' section */
-.types-of-smiling {
-    height: 70vh;
-    max-height: fit-content;
-}
-/* Media query for screens with a max width of 75em (1200px) */
-@media (max-width: 75em) {
+    /* Styles for circular elements */
+    .circle {
+        border-radius: 50%;
+    }
+
+    /* Styles for a quote image */
+    .quote-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url('assets/Smiling.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Styles for the quote image description */
+    .quote-image-description {
+        color: var(--background-color2);
+        line-height: 1.5;
+        max-width: 680px;
+    }
+
+    /* Additional styles for the quote image description */
+    .quote-image-description h3 {
+        padding-top: 1rem;
+        font-weight: bold;
+    }
+
+    .quote-image-description .p {
+        padding-top: 0.4rem;
+    }
+
+    .quote-image-descrip {
+        font-size: 20px;
+    }
+
+    /* Styles for the 'types-of-smiling' section */
     .types-of-smiling {
-        height: auto;
-        max-height: auto;
+        height: 70vh;
+        max-height: fit-content;
     }
-}
-
-/* Media query for screens with a max width of 61.25em (980px) */
-@media (max-width: 61.25em) {
-    .types-of-smiling {
-        height: auto;
-        max-height: auto;
+    /* Media query for screens with a max width of 75em (1200px) */
+    @media (max-width: 75em) {
+        .types-of-smiling {
+            height: auto;
+            max-height: auto;
+        }
     }
-}
 
-/* Media query for screens with a max width of 28.75em (460px) */
-@media (max-width: 28.75em) {
-    .types-of-smiling {
-        height: auto;
-        max-height: auto;
+    /* Media query for screens with a max width of 61.25em (980px) */
+    @media (max-width: 61.25em) {
+        .types-of-smiling {
+            height: auto;
+            max-height: auto;
+        }
     }
-}
 
-/* Styles for the 'h2' elements in the 'types-of-smiling' section */
-.types-of-smiling h2 {
-    font-size: clamp(1rem, 6vw, 2rem);
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
+    /* Media query for screens with a max width of 28.75em (460px) */
+    @media (max-width: 28.75em) {
+        .types-of-smiling {
+            height: auto;
+            max-height: auto;
+        }
+    }
 
-/* Styles for the 'smiling' section */
-.smiling {
-    background-color: #FFFFFF;
-    height: max-content;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-content: center;
-}
+    /* Styles for the 'h2' elements in the 'types-of-smiling' section */
+    .types-of-smiling h2 {
+        font-size: clamp(1rem, 6vw, 2rem);
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 
-/* Styles for the 'h2' elements in the 'smiling' section */
-.smiling h2 {
-    text-align: center;
-    font-size: 2em;
-}
+    /* Styles for the 'smiling' section */
+    .smiling {
+        background-color: #FFFFFF;
+        height: max-content;
+        max-height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+    }
 
-/* Styles for the 'inner-smiling' section */
-.inner-smiling {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-content: space-evenly;
-    width: 100%;
-    max-width: 1280px;
-}
+    /* Styles for the 'h2' elements in the 'smiling' section */
+    .smiling h2 {
+        text-align: center;
+        font-size: 2em;
+    }
 
-/* Styles for 'sm1', 'sm2', 'sm3', and 'sm4' elements */
-.sm1, .sm2, .sm3, .sm4 {
-    max-width: 255px;
-    max-height: 335px;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
+    /* Styles for the 'inner-smiling' section */
+    .inner-smiling {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1280px;
+    }
 
-/* Styles for smiling images */
-.smiling-image {
-    width: 255px;
-    height: 154px;
-    object-fit: cover;
-}
+    /* Styles for 'sm1', 'sm2', 'sm3', and 'sm4' elements */
+    .sm1, .sm2, .sm3, .sm4 {
+        max-width: 255px;
+        max-height: 335px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
 
-/* Styles for the 'quote-smiling' section */
-.quote-smiling {
-    padding-top: 1rem;
-    display: flex;
-    gap: 0.7rem;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-}
+    /* Styles for smiling images */
+    .smiling-image {
+        width: 255px;
+        height: 154px;
+        object-fit: cover;
+    }
 
-/* Styles for 'p' elements inside the 'quote-smiling' section */
-.quote-smiling p {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--background-color1);
-}
+    /* Styles for the 'quote-smiling' section */
+    .quote-smiling {
+        padding-top: 1rem;
+        display: flex;
+        gap: 0.7rem;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+    }
 
-/* Styles for the smile image */
-.smile-image {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-image: url('assets/Rating.png');
-    background-size: cover;
-    background-position: center;
-}
-/* Media query for Mobiles */
-/* For 640 Resolution */  
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  
-{   .inner-smiling h3{
-      margin-top: -3.5rem;
-}
-} 
-/* Media query for screens with a max width of 75em (1200px) */
-@media (max-width: 75em) {
-    .inner-smiling h3{
-        margin-top: -4.5rem;
-  }
-}
-/* Media query for screens with a max width of 61.25em (980px) */
-@media (max-width: 61.25em) {
-    .inner-smiling h3{
-        margin-top: -4rem;
-  }
-}
+    /* Styles for 'p' elements inside the 'quote-smiling' section */
+    .quote-smiling p {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--background-color1);
+    }
 
-/* Media query for Laptops */
-/* For 1024 Resolution */  
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  
-{ .inner-smiling h3{
-    margin-top: -3.5rem;
-}
-}  
+    /* Styles for the smile image */
+    .smile-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-image: url('assets/Rating.png');
+        background-size: cover;
+        background-position: center;
+    }
+      /* Styles for the triangle element */
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 8.25px solid transparent;
+        border-right: 8.25px solid transparent;
+        border-bottom: 16.5px solid var(--background-color1);
+        transform: rotate(90deg);
+        transition: 0.3s ease-out;
+        position: relative;
+        top: 23px;
+        left: 25px;
+    }
 
-/* For 1366 Resolution */  
-@media only screen and (min-width: 1030px) and (max-width: 1366px)  
-{
-    .inner-smiling h3{
+    /* Triangle hover effect */
+    .triangle:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    /* Media query for Mobiles */
+    /* For 640 Resolution */  
+    @media only screen and (min-device-width : 360px) and (max-device-width : 640px)  
+    {   .inner-smiling h3{
         margin-top: -3.5rem;
     }
-} 
+    } 
+    /* Media query for screens with a max width of 75em (1200px) */
+    @media (max-width: 75em) {
+        .inner-smiling h3{
+            margin-top: -4.5rem;
+    }
+    }
+    /* Media query for screens with a max width of 61.25em (980px) */
+    @media (max-width: 61.25em) {
+        .inner-smiling h3{
+            margin-top: -4rem;
+    }
+    }
 
-/* Media query for Desktops*/
-@media only screen and (min-width: 1370px) and (max-width: 1605px)  
-{ .inner-smiling h3{
-    margin-top: -3.5rem;
-}
-} 
+    /* Media query for Laptops */
+    /* For 1024 Resolution */  
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  
+    { .inner-smiling h3{
+        margin-top: -3.5rem;
+    }
+    }  
 
-/* Media query for Tablets */
-@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  
-    and (min-device-width : 768px) and (max-device-width : 1007px)   
-{ .inner-smiling h3{
-    margin-top: -4.5rem;
-}
-}
+    /* For 1366 Resolution */  
+    @media only screen and (min-width: 1030px) and (max-width: 1366px)  
+    {
+        .inner-smiling h3{
+            margin-top: -3.5rem;
+        }
+    } 
 
-/* Orientation : Portrait */  
-@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) 
-    and (min-device-width : 768px) and (max-device-width : 1007px)  
-{.inner-smiling h3{
-    margin-top: -4.5rem;
-}
-} 
+    /* Media query for Desktops*/
+    @media only screen and (min-width: 1370px) and (max-width: 1605px)  
+    { .inner-smiling h3{
+        margin-top: -3.5rem;
+    }
+    } 
 
-/* Styles for the 'rating-circle' section */
-.rating-circle {
-    display: flex;
-    gap: 80px;
-    padding-top: 1rem;
-    color: var(--background-color1);
-    font-size: 16px;
-    font-weight: 400;
-}
+    /* Media query for Tablets */
+    @media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  
+        and (min-device-width : 768px) and (max-device-width : 1007px)   
+    { .inner-smiling h3{
+        margin-top: -4.5rem;
+    }
+    }
 
-/* Styles for 'i' elements inside the 'rating-circle' section on hover */
-.rating-circle:hover i {
-    cursor: pointer;
-    transform: translateY(3px);
-    transition: 0.8s ease-in;
-}
+    /* Orientation : Portrait */  
+    @media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) 
+        and (min-device-width : 768px) and (max-device-width : 1007px)  
+    {.inner-smiling h3{
+        margin-top: -4.5rem;
+    }
+    } 
 
-/* Additional styles for 'p' elements inside the 'rating-circle' section */
-.rating-circle p {
-    font-size: 18px;
-    font-weight: 500;
-}
+    /* Styles for the 'rating-circle' section */
+    .rating-circle {
+        display: flex;
+        gap: 80px;
+        padding-top: 1rem;
+        color: var(--background-color1);
+        font-size: 16px;
+        font-weight: 400;
+    }
 
-/* Styles for the 'membership' section */
-.membership {
-    background-color: var(--background-color3);
-    color: #FFFFFF;
-    width: 100%;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit);
-}
+    /* Styles for 'i' elements inside the 'rating-circle' section on hover */
+    .rating-circle:hover i {
+        cursor: pointer;
+        transform: translateY(3px);
+        transition: 0.8s ease-in;
+    }
 
-/* Styles for the 'types-membership' section */
-.types-membership {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
-}
+    /* Additional styles for 'p' elements inside the 'rating-circle' section */
+    .rating-circle p {
+        font-size: 18px;
+        font-weight: 500;
+    }
 
-/* Styles for the 'inner-membership' section */
-.inner-membership {
-    display: flex;
-    gap: 1.9rem;
-    margin: auto;
-    padding-top: 4rem;
-    width: 50%;
-    line-height: 2;
-}
+    /* Styles for the 'membership' section */
+    .membership {
+        background-color: var(--background-color3);
+        color: #FFFFFF;
+        width: 100%;
+        height: 50vh;
+    }
 
-/* Styles for 'h2' elements inside the 'membership' section */
-.membership h2 {
-    font-size: clamp(1rem, 6vw, 2rem);
-    padding-top: 4rem;
-    padding-bottom: 0;
-}
+    /* Styles for the 'inner-membership' section */
+    .inner-membership {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 2;
+    } 
+    .child-inner-membership{
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+        height: 100%;
+    }
+    .inner-description{
+        width: 50%;
+        max-width: 350px;
+        margin-left: 7rem;
+    }
 
-/* Styles for the 'membership-header' section */
-.membership-header {
-    text-align: center;
-    padding-bottom: 4rem;
-}
+    /* Styles for 'h2' elements inside the 'membership' section */
+    .membership h2 {
+        font-size: clamp(1rem, 6vw, 2rem);
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
 
-/* Styles for 'mem-desc' elements */
-.mem-desc {
-    text-align: center;
-}
+    /* Styles for the 'membership-header' section */
+    .membership-header {
+        text-align: center;
+        padding-bottom: 4rem;
+    }
 
-/* Styles for the logo image */
-.logo {
-    margin: auto;
-    display: block;
-    justify-content: center;
-    align-content: center;
-    width: 50px;
-}
+    /* Styles for 'mem-desc' elements */
+    .mem-desc {
+        text-align: center;
+    }
 
-/* Button styles */
-button {
-    background-color: var(--background-color1);
-    color: var(--background-color2);
-    position: relative;
-    left: 45%;
-    top: 10%;
-    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
-    border-radius: 22px;
-    height: 44px;
-    border: none;
-    width: 162px;
-    font-weight: 600;
-    font-size: 14px;
-}
+    /* Styles for the logo image */
+    .logo {
+        margin: auto;
+        display: block;
+        justify-content: center;
+        align-content: center;
+        width: 50px;
+    }
 
-/* Button hover effect */
-button:hover {
-    cursor: pointer;
-    transform: translateZ(100px);
-}
+    /* Styles for the 'FAQ' section */
+    .FAQ {
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+        width: 100%;
+        padding-top: 6rem;
+        gap: 50%;
+        align-items: center;
+        padding-bottom: 4rem;
+        height: max-content;
+        margin: auto;
+    }
 
-/* Styles for the 'FAQ' section */
-.FAQ {
-    display: flex;
-    flex-direction: column;
-    max-width: max-content;
-    width: 100%;
-    padding-top: 6rem;
-    gap: 50%;
-    align-items: center;
-    padding-bottom: 4rem;
-    height: max-content;
-    margin: auto;
-}
+    /* Styles for the 'FAQ-description' section */
+    .FAQ-description {
+        font-size: 50px;
+        padding-bottom: 4rem;
+        margin: auto;
+        text-align: center;
+        color: #000;
+    }
 
-/* Styles for the 'FAQ-description' section */
-.FAQ-description {
-    font-size: 50px;
-    padding-bottom: 4rem;
-    margin: auto;
-    text-align: center;
-    color: #000;
-}
+    /* Styles for the 'outer-class' section */
+    .outer-class {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        line-height: 1.5;
+        width: 100%;
+        height: 100%;
+        max-width: 920px;
+        max-height: 707px;
+    }
 
-/* Styles for the 'outer-class' section */
-.outer-class {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    line-height: 1.5;
-    width: 100%;
-    height: 100%;
-    max-width: 920px;
-    max-height: 707px;
-}
+    /* Styles for the 'inner-class' section */
+    .inner-class {
+        display: grid;
+        justify-items: center;
+        grid-gap: 5em;
+    }
 
-/* Styles for the 'inner-class' section */
-.inner-class {
-    display: grid;
-    justify-items: center;
-    grid-gap: 5em;
-}
+    /* Styles for the left side */
+    .left-side {
+        margin-left: 12%;
+    }
 
-/* Styles for the left side */
-.left-side {
-    margin-left: 12%;
-}
+    /* Styles for the right side */
+    .right-side {
+        margin-left: 12%;
+    }
 
-/* Styles for the right side */
-.right-side {
-    margin-left: 12%;
-}
+    /* Styles for the footer section */
+    footer {
+        background-color: var(--background-color3);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 15vh;
+        padding-top: 4%;
+    }
 
-/* Styles for the footer section */
-footer {
-    background-color: var(--background-color3);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 15vh;
-    padding-top: 4%;
-}
+    /* Styles for footer images */
+    footer img {
+        width: 169px;
+        height: 30px;
+    }
 
-/* Styles for footer images */
-footer img {
-    width: 169px;
-    height: 30px;
-}
+    /* Styles for contact links */
+    .contact-links a {
+        align-items: center;
+        color: var(--background-color2);
+    }
 
-/* Styles for contact links */
-.contact-links a {
-    align-items: center;
-    color: var(--background-color2);
-}
+    /* Styles for contact link icons */
+    .contact-links i {
+        width: 20px;
+    }
 
-/* Styles for contact link icons */
-.contact-links i {
-    width: 20px;
-}
+    /* Styles for the player element */
+    .player {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--background-color2);
+        position: relative;
+        bottom: 105px;
+        left: 90px;
+        opacity: 80%;
+    }
+    /* Button styles */
+    button {
+        background-color: var(--background-color1);
+        color: var(--background-color2);
+        position: relative;
+        left: 45%;
+        top: 10%;
+        filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+        border-radius: 22px;
+        height: 44px;
+        border: none;
+        width: 162px;
+        font-weight: 600;
+        font-size: 14px;
+    }
 
-/* Styles for the player element */
-.player {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--background-color2);
-    position: relative;
-    bottom: 105px;
-    left: 90px;
-    opacity: 80%;
-}
- 
-
-/* Styles for the triangle element */
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 8.25px solid transparent;
-    border-right: 8.25px solid transparent;
-    border-bottom: 16.5px solid var(--background-color1);
-    transform: rotate(90deg);
-    transition: 0.3s ease-out;
-    position: relative;
-    top: 23px;
-    left: 25px;
-}
-
-/* Triangle hover effect */
-.triangle:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-}
+    /* Button hover effect */
+    button:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
