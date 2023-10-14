@@ -26,21 +26,21 @@ body {
 /* Media query for screens with a max width of 75em (1200px) */
 @media (max-width: 75em) {
     html {
-        font-size: 60%;
+        font-size: 75%;
     }
 }
 
 /* Media query for screens with a max width of 61.25em (980px) */
 @media (max-width: 61.25em) {
     html {
-        font-size: 58%;
+        font-size: 85%;
     }
 }
 
 /* Media query for screens with a max width of 28.75em (460px) */
 @media (max-width: 28.75em) {
     html {
-        font-size: 55%;
+        font-size: 70;
     }
 }
 
@@ -120,6 +120,30 @@ span {
 /* Styles for the 'types-of-smiling' section */
 .types-of-smiling {
     height: 70vh;
+    max-height: fit-content;
+}
+/* Media query for screens with a max width of 75em (1200px) */
+@media (max-width: 75em) {
+    .types-of-smiling {
+        height: auto;
+        max-height: auto;
+    }
+}
+
+/* Media query for screens with a max width of 61.25em (980px) */
+@media (max-width: 61.25em) {
+    .types-of-smiling {
+        height: auto;
+        max-height: auto;
+    }
+}
+
+/* Media query for screens with a max width of 28.75em (460px) */
+@media (max-width: 28.75em) {
+    .types-of-smiling {
+        height: auto;
+        max-height: auto;
+    }
 }
 
 /* Styles for the 'h2' elements in the 'types-of-smiling' section */
@@ -133,8 +157,8 @@ span {
 /* Styles for the 'smiling' section */
 .smiling {
     background-color: #FFFFFF;
-    height: 40vh;
-    max-height: 450px;
+    height: max-content;
+    max-height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -160,6 +184,9 @@ span {
 .sm1, .sm2, .sm3, .sm4 {
     max-width: 255px;
     max-height: 335px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 /* Styles for smiling images */
@@ -195,6 +222,64 @@ span {
     background-size: cover;
     background-position: center;
 }
+/* Media query for Mobiles */
+/* For 640 Resolution */  
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  
+{   .inner-smiling h3{
+      margin-top: -3.5rem;
+}
+} 
+/* Media query for screens with a max width of 75em (1200px) */
+@media (max-width: 75em) {
+    .inner-smiling h3{
+        margin-top: -4.5rem;
+  }
+}
+/* Media query for screens with a max width of 61.25em (980px) */
+@media (max-width: 61.25em) {
+    .inner-smiling h3{
+        margin-top: -4rem;
+  }
+}
+
+/* Media query for Laptops */
+/* For 1024 Resolution */  
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  
+{ .inner-smiling h3{
+    margin-top: -3.5rem;
+}
+}  
+
+/* For 1366 Resolution */  
+@media only screen and (min-width: 1030px) and (max-width: 1366px)  
+{
+    .inner-smiling h3{
+        margin-top: -3.5rem;
+    }
+} 
+
+/* Media query for Desktops*/
+@media only screen and (min-width: 1370px) and (max-width: 1605px)  
+{ .inner-smiling h3{
+    margin-top: -3.5rem;
+}
+} 
+
+/* Media query for Tablets */
+@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  
+    and (min-device-width : 768px) and (max-device-width : 1007px)   
+{ .inner-smiling h3{
+    margin-top: -4.5rem;
+}
+}
+
+/* Orientation : Portrait */  
+@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) 
+    and (min-device-width : 768px) and (max-device-width : 1007px)  
+{.inner-smiling h3{
+    margin-top: -4.5rem;
+}
+} 
 
 /* Styles for the 'rating-circle' section */
 .rating-circle {
@@ -225,8 +310,8 @@ span {
     color: #FFFFFF;
     width: 100%;
     height: 50vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
 }
 
 /* Styles for the 'types-membership' section */
@@ -238,13 +323,10 @@ span {
 /* Styles for the 'inner-membership' section */
 .inner-membership {
     display: flex;
+    gap: 1.9rem;
     margin: auto;
     padding-top: 4rem;
-    gap: 2rem;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    max-width: 1000px;
+    width: 50%;
     line-height: 2;
 }
 
@@ -301,20 +383,21 @@ button:hover {
 .FAQ {
     display: flex;
     flex-direction: column;
-    max-width: 1350px;
+    max-width: max-content;
     width: 100%;
     padding-top: 6rem;
     gap: 50%;
     align-items: center;
     padding-bottom: 4rem;
-    height: 100%;
+    height: max-content;
+    margin: auto;
 }
 
 /* Styles for the 'FAQ-description' section */
 .FAQ-description {
     font-size: 50px;
     padding-bottom: 4rem;
-    margin-left: 10%;
+    margin: auto;
     text-align: center;
     color: #000;
 }
@@ -387,6 +470,7 @@ footer img {
     left: 90px;
     opacity: 80%;
 }
+ 
 
 /* Styles for the triangle element */
 .triangle {
