@@ -111,7 +111,7 @@
     }
     .cover-page{
         background-image: url('assets/Cover-Photo.png');
-        background-size: contain;
+        background-size: cover;
         background-position: inherit;
         background-repeat: no-repeat;
         width: auto;
@@ -612,6 +612,13 @@
     footer img {
         width: 169px;
         height: 30px;
+    }
+/*     Styles for the copyright */
+    footer p{
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0.3517;
     }
 
     /* Styles for contact links */
