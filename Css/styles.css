@@ -110,7 +110,7 @@
         background-image: url('assets/Cover-Photo.png');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
+        width: auto;
         height: 150vh;
     }
     .cover-text{
